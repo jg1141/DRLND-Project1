@@ -44,15 +44,16 @@ These are unchanged from the Udacity example. The BATCH_SIZE and BUFFER_SIZE are
 
 #### Model Architecture
 
- The model is a mapping of state to action values
+ The model is a mapping of state to action values via fully connected **Linear** layers with **relu** activation. 
 
 ## Plot of Rewards
 
-Need more links? Visit [http://bit.ly/drlndlinks](http://bit.ly/drlndlinks) to learn much more about DRLND and Reinforcement Learning.
-
-![Plot of Rewards](https://github.com/jg1141/DRLND-Project1/blob/master/Unity3D%20Banana%20environment.png)
+![Plot of Rewards](https://github.com/jg1141/DRLND-Project1/blob/master/Plot%20of%20Rewards.png)
 
 
 
 ## Ideas for Future Work
 
+The paper [Rainbow: Combining Improvements in Deep Reinforcement Learning ](https://arxiv.org/pdf/1710.02298.pdf) suggests combining all the optimizations of RL into a single model.
+
+Lots more to study at [http://bit.ly/drlndlinks](http://bit.ly/drlndlinks)!
