@@ -44,7 +44,7 @@ Follow instructions there to obtain the **Unity3D Banana environment** from Udac
 
 Select **Cell > Run All**.
 
-#### Additional Resources
+## Additional Resources
 
 Need more links? Visit [http://bit.ly/drlndlinks](http://bit.ly/drlndlinks) to learn much more about DRLND and Reinforcement Learning.
 
