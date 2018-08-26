@@ -22,3 +22,7 @@ Install [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents/blob/m
 [DRLND Project 1 - Navigation (Banana environment).ipynb](http://localhost:8888/notebooks/DRLND%20Project%201%20-%20Navigation%20(Banana%20environment)/DRLND%20Project%201%20-%20Navigation%20(Banana%20environment).ipynb) - link for use on your localhost:8888 Jupyter instance
 
 Follow instructions there to obtain the Unity3D Banana environment from Udacity.
+
+### Additional Resources
+
+Need more links? Visit [http://bit.ly/drlndlinks](http://bit.ly/drlndlinks) to learn much more about DRLND and Reinforcement Learning.
