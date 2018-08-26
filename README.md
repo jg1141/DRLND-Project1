@@ -26,3 +26,5 @@ Follow instructions there to obtain the Unity3D Banana environment from Udacity.
 ### Additional Resources
 
 Need more links? Visit [http://bit.ly/drlndlinks](http://bit.ly/drlndlinks) to learn much more about DRLND and Reinforcement Learning.
+
+![Image of Unity3D Banana environment](https://github.com/jg1141/DRLND-Project1/blob/master/Unity3D%20Banana%20environment.png)
