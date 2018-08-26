@@ -12,7 +12,6 @@ The notebook and Python files in this repository present a solution using the Un
 The state space for this project is a continuous 37-dimension vector representing the position and ray angles of bananas relative to the agent's forward direction. The action space consists of the four possibilities: 
 
 - `0` - walk forward 
-
 - `1` - walk backward
 - `2` - turn left
 - `3` - turn right
@@ -45,7 +44,7 @@ Follow instructions there to obtain the **Unity3D Banana environment** from Udac
 
 Select **Cell > Run All**.
 
-### Additional Resources
+#### Additional Resources
 
 Need more links? Visit [http://bit.ly/drlndlinks](http://bit.ly/drlndlinks) to learn much more about DRLND and Reinforcement Learning.
 
