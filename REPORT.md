@@ -7,7 +7,7 @@ The learning algorithm implemented for this project is a **Double DQN** patterne
 
 Specifically, the **diff** below shows the addition of a flag for Double DQN, **.eval()** (training of) the second TARGET network and selection of the action values based on the flag:
 
-```python
+```
 > diff dqn_agent.py deep-reinforcement-learning/dqn/solution/dqn_agent.py
 ...
 58c58
