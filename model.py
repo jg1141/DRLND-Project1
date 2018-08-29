@@ -35,5 +35,6 @@ class QNetwork(nn.Module):
         x = state
         for layer in self.layers:
             x = F.relu(layer(x))
+            x = self.dropout(x)
         
         return self.output(x)

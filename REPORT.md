@@ -44,7 +44,22 @@ These are unchanged from the Udacity example. The BATCH_SIZE and BUFFER_SIZE are
 
 #### Model Architecture
 
- The model is a mapping of state to action values via fully connected **Linear** layers with **relu** activation. 
+ The model is a mapping of state to action values via fully connected **Linear** layers with **relu** activation and **Dropout**. The final output layer yields weighted outputs for each of the four possible actions, with action selection made via **argmax** wrapped in **Epsilon-greedy action selection** logic to allow random exploration (governed by the value of epsilon, which declines through the course of the training).
+
+```markdown
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Linear-1                [-1, 1, 64]           2,432
+           Dropout-2                [-1, 1, 64]               0
+            Linear-3                [-1, 1, 64]           4,160
+           Dropout-4                [-1, 1, 64]               0
+            Linear-5                 [-1, 1, 4]             260
+================================================================
+Total params: 6,852
+```
+
+ 
 
 ## Plot of Rewards
 
@@ -54,6 +69,16 @@ These are unchanged from the Udacity example. The BATCH_SIZE and BUFFER_SIZE are
 
 ## Ideas for Future Work
 
-The paper [Rainbow: Combining Improvements in Deep Reinforcement Learning ](https://arxiv.org/pdf/1710.02298.pdf) suggests combining all the optimizations of RL into a single model.
+These are exciting times for Reinforcement Learning (RL). The paper [Rainbow: Combining Improvements in Deep Reinforcement Learning ](https://arxiv.org/pdf/1710.02298.pdf) suggested combining many known optimizations of RL into a single model. While this project was underway, Google released [Dopamine](https://github.com/google/dopamine) "a research framework for fast prototyping of reinforcement learning algorithms" which includes a **Rainbow** [agent](https://github.com/google/dopamine/tree/master/dopamine/agents/rainbow):
 
-Lots more to study at [http://bit.ly/drlndlinks](http://bit.ly/drlndlinks)!
+```
+Specifically, we implement the following components from Rainbow:
+
+  * n-step updates;
+  * prioritized replay; and
+  * distributional RL.
+```
+
+The next step for improving agent performance in this project would be to re-implement it using Dopamine.
+
+Then, there is lots more to study at [http://bit.ly/drlndlinks](http://bit.ly/drlndlinks)!
